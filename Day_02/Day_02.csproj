@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5D01FD97-FBF1-40E6-9ED9-3D531BC92CD3}</ProjectGuid>
+    <ProjectGuid>{9A2E3F38-1BDE-4C9A-BC69-2888E856483B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Day_01</RootNamespace>
-    <AssemblyName>Day_01</AssemblyName>
+    <RootNamespace>Day_02</RootNamespace>
+    <AssemblyName>Day_02</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,12 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Utility_Library\Utility_Library.csproj">
-      <Project>{5fd1aa7b-e968-4f17-9b96-c1c9d5e4d681}</Project>
-      <Name>Utility_Library</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
