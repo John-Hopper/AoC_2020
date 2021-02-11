@@ -21,9 +21,9 @@ namespace Utility_Library
             switch (enviromentData.UserDomainName)
             {
                 case "AT100440":
-                    dataReturn.DataPath = @" ";
+                    dataReturn.DataPath = @"C:\Users\dev1\Source\Repos\AoC_2020\Data Input\";
                     break;
-                case "COLUMBU":
+                case "COLUMBUS":
                     dataReturn.DataPath = @"D:\Users\U.6076325\source\repos\AoC_2020\Data Input\";
                     break;
                 default:
