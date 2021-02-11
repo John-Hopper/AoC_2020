@@ -2,7 +2,7 @@
 
 namespace Utility_Library
 {
-    public class WorkingEnvioroment
+    public class WorkingEnvironment
     {
         public string OsVersion { get; set; }
         public string CurrentDirectory { get; set; }
@@ -13,10 +13,10 @@ namespace Utility_Library
         /// <summary>
         /// Returns various properties for environment the application is running in.
         /// </summary>
-        /// <returns>WorkingEnvioroment class</returns>
-        public WorkingEnvioroment EnviromentInfo()
+        /// <returns>WorkingEnvironment class</returns>
+        public WorkingEnvironment EnvironmentInfo()
         {
-            WorkingEnvioroment dataReturn = new WorkingEnvioroment();
+            WorkingEnvironment dataReturn = new WorkingEnvironment();
 
             dataReturn.OsVersion = Convert.ToString(Environment.OSVersion);
             dataReturn.CurrentDirectory = Convert.ToString(Environment.CurrentDirectory);

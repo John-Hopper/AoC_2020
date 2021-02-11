@@ -9,18 +9,19 @@ namespace Day_01
     {
         static void Main(string[] args)
         {
-            string[] ExpensesData = File.ReadAllLines(@"D:\Users\U.6076325\source\repos\Advent_of_Code_2020\Data Input\201201 Input.txt");
+            // In initialize Global Variables & variables
+            Globals globalVariables = new Globals();
+            globalVariables = globalVariables.GetGlobalVariables();
 
-            WorkingEnvioroment enviromentData = new WorkingEnvioroment();
+            //read data file
+            if (globalVariables.Failed)
+            {
+                Console.WriteLine($"Initialization Failed");
+                Console.ReadLine();
+                return;
+            }
 
-            enviromentData = enviromentData.EnviromentInfo();
-
-            Console.WriteLine($"OsVersion : {enviromentData.OsVersion}");
-            Console.WriteLine($"CurrentDirectory : {enviromentData.CurrentDirectory}");
-            Console.WriteLine($"MachineName : {enviromentData.MachineName}");
-            Console.WriteLine($"UserDomainName : {enviromentData.UserDomainName}");
-            Console.WriteLine($"UserName : {enviromentData.UserName}");
-
+            string[] ExpensesData = File.ReadAllLines($"{globalVariables.DataPath}201201 Input.txt");
 
             //Set Target Expense
             int targetExpense = 2020;
