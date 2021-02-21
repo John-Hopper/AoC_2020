@@ -8,6 +8,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utility_Library", "Utility_Library\Utility_Library.csproj", "{5FD1AA7B-E968-4F17-9B96-C1C9D5E4D681}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day_02", "Day_02\Day_02.csproj", "{9A2E3F38-1BDE-4C9A-BC69-2888E856483B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5FD1AA7B-E968-4F17-9B96-C1C9D5E4D681} = {5FD1AA7B-E968-4F17-9B96-C1C9D5E4D681}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Input", "Data Input", "{0D8AA234-DCE5-4080-9621-68B0743FA3EE}"
 	ProjectSection(SolutionItems) = preProject

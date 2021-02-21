@@ -9,18 +9,19 @@ namespace Day_01
     {
         static void Main(string[] args)
         {
-            // In initialize Global Variables & variables
+            // initialize Global Variables & get variable info
             Globals globalVariables = new Globals();
             globalVariables = globalVariables.GetGlobalVariables();
 
-            //read data file
+            // check know environment and global variables initialized ok
             if (globalVariables.Failed)
             {
-                Console.WriteLine($"Initialization Failed");
+                Console.WriteLine($"Environment not found - Initialization Failed");
                 Console.ReadLine();
                 return;
             }
 
+            //read data file
             string[] ExpensesData = File.ReadAllLines($"{globalVariables.DataPath}201201 Input.txt");
 
             //Set Target Expense
