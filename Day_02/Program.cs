@@ -15,7 +15,7 @@ namespace Day_02
             Globals globalVariables = new Globals();
             globalVariables = globalVariables.GetGlobalVariables();
 
-            // check know environment and global variables initialized ok
+            // check environment and global variables initialized ok
             if (globalVariables.Failed)
             {
                 Console.WriteLine($"Environment not found - Initialization Failed");

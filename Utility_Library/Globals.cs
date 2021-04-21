@@ -24,7 +24,7 @@ namespace Utility_Library
                     dataReturn.DataPath = @"C:\Users\dev1\Source\Repos\AoC_2020\Data Input\";
                     break;
                 case "COLUMBUS":
-                    dataReturn.DataPath = @"D:\Users\U.6076325\source\repos\AoC_2020\Data Input\";
+                    dataReturn.DataPath = @"D:\Users\U.6076325\source\Repos\AoC_2020\Data Input\";
                     break;
                 default:
                     dataReturn.Failed = true;
